@@ -3,7 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34916.146
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServices", "WebServices.csproj", "{203189C9-03A6-45ED-A9A3-B778FA4079AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebServices", "WebServices.csproj", "{203189C9-03A6-45ED-A9A3-B778FA4079AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService", "..\UserService\UserService.csproj", "{E54A25DF-A21C-42D6-A598-4B3EF5AEE42B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseService", "..\CourseService\CourseService.csproj", "{A62E7781-F83B-432F-AB82-7F9490033ACF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnrollmentService", "..\EnrollmentService\EnrollmentService.csproj", "{46C31379-E62B-4A3E-A027-F1C07DF000BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7798AD26-0980-4BD6-9276-47E26EAAF39F}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +26,18 @@ Global
 		{203189C9-03A6-45ED-A9A3-B778FA4079AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{203189C9-03A6-45ED-A9A3-B778FA4079AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{203189C9-03A6-45ED-A9A3-B778FA4079AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E54A25DF-A21C-42D6-A598-4B3EF5AEE42B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E54A25DF-A21C-42D6-A598-4B3EF5AEE42B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E54A25DF-A21C-42D6-A598-4B3EF5AEE42B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E54A25DF-A21C-42D6-A598-4B3EF5AEE42B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A62E7781-F83B-432F-AB82-7F9490033ACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A62E7781-F83B-432F-AB82-7F9490033ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A62E7781-F83B-432F-AB82-7F9490033ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A62E7781-F83B-432F-AB82-7F9490033ACF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46C31379-E62B-4A3E-A027-F1C07DF000BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46C31379-E62B-4A3E-A027-F1C07DF000BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46C31379-E62B-4A3E-A027-F1C07DF000BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46C31379-E62B-4A3E-A027-F1C07DF000BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

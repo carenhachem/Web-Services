@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  userservice:
+    build:
+      context: ./UserService
+      dockerfile: Dockerfile
+    ports:
+      - "5004:5000"     # Host:Container
+    networks:
+      - student-course-network
+
+  courseservice:
+    build:
+      context: ./CourseService
+      dockerfile: Dockerfile
+    ports:
+      - "5033:5000"
+    networks:
+      - student-course-network
+
+  enrollmentservice:
+    build:
+      context: ./EnrollmentService
+      dockerfile: Dockerfile
+    ports:
+      - "5232:5000"
+    networks:
+      - student-course-network
+
+networks:
+  student-course-network:
+    driver: bridge
